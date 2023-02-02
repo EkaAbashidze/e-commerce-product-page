@@ -9,6 +9,9 @@ module.exports = {
         3: "url(../src/images/image-product-3.jpg)",
         4: "url(../src/images/image-product-4.jpg)",
       },
+      width: {
+        326: "326px",
+      },
       colors: {
         orange: "hsl(26, 100%, 55%)",
         paleorange: "hsl(25, 100%, 94%)",
