@@ -4,7 +4,11 @@ import IconMenu from "./Svg/IconMenu";
 import Logo from "./Svg/Logo";
 import Avatar from "../images/image-avatar.png";
 
-export default function Navbar() {
+interface Props {
+  fillColor: string;
+}
+
+const Navbar: React.FC<Props> = ({ fillColor }) => {
   return (
     <div className="flex items-center justify-between px-6 h-[68px] border-b-2 border-b-black pb-7 pt-[20px]">
       <div className="flex items-end gap-x-4">
@@ -13,9 +17,11 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center gap-x-[22px]">
-        <IconCart />
+        <IconCart fillColor={fillColor} />
         <img className="h-6 w-6" src={Avatar} alt="" />
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;
